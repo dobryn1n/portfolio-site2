@@ -1,0 +1,270 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #171919;
+	color: white;
+	text-transform: uppercase;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.supt-left {
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 8px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	padding-left: 103px;
+	position: relative;
+	display: inline-block;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 80px;
+		height: 1px;
+		background-color: #fff;
+		left: 0;
+		top: 50%;
+	}
+
+}
+
+ul,li,a{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: white;
+}
+.title {
+	bottom: 30px;
+	position: relative;
+	.title__page {
+		font-weight: 800;
+		font-size: 80px;
+		position: absolute;
+		top: 0;
+		left: 294px;
+		margin: 0;
+		&::after {
+			content: '';
+			width: 80px;
+			height: 1px;
+			background-color: #4AF6CD;
+			top: 0;
+			right: 0;
+			position: absolute;
+		}
+	}
+}
+section, footer {
+	padding-top: 60px;
+	.descr-headline {
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: 8px;
+		opacity: 0.5;
+		padding-right: 103px;
+		position: relative;
+		display: inline-block;
+		&::before {
+			content: '';
+			width: 80px;
+			height: 1px;
+			background-color: #fff;
+			position: absolute;
+					top: 50%;
+		right: 0;
+
+		}
+	}
+	.descr , .shop-slider__price {
+		padding-left: 132px;
+		.list__star {
+			display: flex;
+
+			li {
+				display: flex;
+				margin-right: -25px;
+			}
+			img {
+				position: static;
+			}
+			&.list__star-shop {
+				margin-left: -15px;
+				li {
+					margin-right: -10px;
+				}
+			}
+		}
+		.descr-name {
+			font-style: normal;
+			font-weight: 800;
+			font-size: 40px;
+			line-height: 86px;
+			display: flex;
+			align-items: center;
+			&.descr-img {
+				img {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	.btn {
+		display: block;
+		font-weight: 800;
+		font-size: 40px;
+		span {
+			padding: 10px;
+			background: #4AF6CD;
+			display: inline-block;
+			img {
+				display: inline-block;
+			}
+		}
+	}
+	.global-btn {
+		text-align: center;
+	}
+	.sub__text {
+		text-align: right;
+		padding: 132px 80px 0 0;
+		.subtext__left {
+			display: inline-block;
+			text-align: right;
+			.subtext {
+				font-weight: normal;
+				font-size: 22px;
+			}
+			.headtext {
+				font-weight: 800;
+				font-size: 40px;
+				span {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	.info-pricing {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1px;
+		position: absolute;
+		bottom: -8px;
+		right: 0;
+		letter-spacing: 6px;
+		opacity: .75
+	}
+	.quantity {
+		display: inline-block;
+	}
+
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button
+	{
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	input[type=number]
+	{
+		-moz-appearance: textfield;
+	}
+
+	.quantity input {
+		width: 45px;
+		height: 42px;
+		display: block;
+		border: none;
+		background-color: transparent;
+		font-weight: 800;
+		font-size: 34px;
+		line-height: 36px;
+		color: white;
+	}
+
+	.quantity input:focus {
+		outline: 0;
+	}
+
+	.quantity-nav {
+		float: left;
+		position: static;
+		height: 42px;
+	}
+
+	.quantity-button {
+		position: relative;
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		user-select: none;
+	}
+
+	.quantity-button.quantity-up {
+		position: absolute;
+		height: 50%;
+		top: 40px;
+		right: 0;
+		color: #4AF6CD;
+	}
+
+	.quantity-button.quantity-down {
+		position: absolute;
+		top: 40px;
+		right: 25px;
+		height: 50%;
+		color: #4AF6CD;
+	}
+}
+.sub__text {
+	text-align: right;
+	padding-right: 132px 80px 0 0;
+.subtext__left {
+	display: inline-block;
+	text-align: right;
+	.subtext {
+		font-weight: normal;
+		font-size: 22px;
+	}
+	.headtext {
+		font-weight: 800;
+		font-size: 40px;
+		span {
+			font-weight: 300;
+		}
+	}
+}
+}
+.btn-box {
+	font-weight: 800;
+	font-size: 30px;
+	position: absolute;
+	text-align: center;
+	right: 0;
+	left: 0;
+	bottom: 10px;
+	.btn {
+		display: none;
+		span {
+			padding: 10px;
+			background-color: #4AF6CD;
+			img {
+				display: inline-block;
+			}
+		}
+	}
+}

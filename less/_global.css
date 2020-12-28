@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #171919;
+  color: white;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.supt-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  padding-left: 103px;
+  position: relative;
+  display: inline-block;
+}
+.supt-left::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+}
+ul,
+li,
+a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+.title {
+  position: relative;
+}
+.title .title__page {
+  font-weight: 800;
+  font-size: 80px;
+  position: absolute;
+  top: 0;
+  left: 294px;
+  margin: 0;
+}
+.title .title__page::after {
+  content: '';
+  width: 80px;
+  height: 1px;
+  background-color: #4AF6CD;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+section {
+  padding-top: 160px;
+}
+.sub__text {
+  margin-top: 120px;
+  text-align: right;
+  padding-right: 80px;
+}
+.sub__text .subtext__left {
+  display: inline-block;
+  text-align: right;
+}
+.sub__text .subtext__left .subtext {
+  font-weight: normal;
+  font-size: 22px;
+}
+.sub__text .subtext__left .headtext {
+  font-weight: 800;
+  font-size: 40px;
+}
+.sub__text .subtext__left .headtext span {
+  font-weight: 300;
+}
+.btn-box {
+  font-weight: 800;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 10px;
+}
+.btn-box .btn {
+  display: none;
+}
+.btn-box .btn span {
+  padding: 10px;
+  background-color: #4AF6CD;
+}
+.btn-box .btn span img {
+  display: inline-block;
+}
